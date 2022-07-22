@@ -6,7 +6,16 @@ namespace _02._Repeat_Strings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[] words = Console.ReadLine().Split();
+            string result = string.Empty;
+            foreach (var word in words)
+            {
+                for (int i = 0; i < word.Length; i++)
+                {
+                    result += word;
+                }
+            }
+            Console.WriteLine(result);
         }
     }
 }
